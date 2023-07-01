@@ -1,0 +1,15 @@
+[
+  {
+    "id": "5ce24939-43ce-4487-8a0b-6cbc4af3b990",
+    "products": [
+      {
+        "product": "b538aab3-9275-4053-8b53-459c576f2f03",
+        "quantity": 6
+      },
+      {
+        "product": "091ddc36-aa89-49a5-a2ca-ea6d20654f82",
+        "quantity": 2
+      }
+    ]
+  }
+]
