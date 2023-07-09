@@ -8,7 +8,7 @@ const router = Router()
 router.get('/', async (req,res) => {
   try {
     
-    const data = await fs.promises.readFile('./files/products.json', 'utf8')
+    const data = await fs.promises.readFile('./src/files/products.json', 'utf8')
     const products = JSON.parse(data)
     res.json(products)
     
@@ -23,7 +23,7 @@ router.get('/:pid', async (req,res) =>{
   try {
     const productId = req.params.pid
 
-    const data = await fs.promises.readFile('./files/products.json', 'utf8')
+    const data = await fs.promises.readFile('./src/files/products.json', 'utf8')
     const products = JSON.parse(data)
 
     const product = products.find((p) => p.id === productId)
@@ -48,7 +48,7 @@ router.post('/', async (req, res) => {
       return res.status(400).json({ error: 'Faltan campos obligatorios' })
     }
 
-    const data = await fs.promises.readFile('./files/products.json', 'utf8')
+    const data = await fs.promises.readFile('./src/files/products.json', 'utf8')
     const productos = JSON.parse(data)
     const productId = uuidv4()
 
@@ -66,7 +66,7 @@ router.post('/', async (req, res) => {
 
     productos.push(newProduct)
 
-    await fs.promises.writeFile('./files/products.json', JSON.stringify(productos, null, 2), 'utf8')
+    await fs.promises.writeFile('./src/files/products.json', JSON.stringify(productos, null, 2), 'utf8')
 
     res.json(newProduct)
   } catch (error) {
@@ -80,7 +80,7 @@ router.patch('/:pid', async (req, res) => {
     const productId = req.params.pid
     const { title, description, code, price, stock, category, thumbnails } = req.body
 
-    const data = await fs.promises.readFile('./files/products.json', 'utf8')
+    const data = await fs.promises.readFile('./src/files/products.json', 'utf8')
     const productos = JSON.parse(data)
 
     const product = productos.find((p) => p.id === productId)
@@ -96,7 +96,7 @@ router.patch('/:pid', async (req, res) => {
     product.category = category || product.category
     product.thumbnails = thumbnails || product.thumbnails
 
-    await fs.promises.writeFile('./files/products.json', JSON.stringify(productos, null, 2), 'utf8')
+    await fs.promises.writeFile('./src/files/products.json', JSON.stringify(productos, null, 2), 'utf8')
 
     res.json(product)
   } catch (error) {
@@ -110,7 +110,7 @@ router.delete('/:pid', async (req, res) => {
   try {
     const productId = req.params.pid
 
-    const data = await fs.promises.readFile('./files/products.json', 'utf8')
+    const data = await fs.promises.readFile('./src/files/products.json', 'utf8')
     const products = JSON.parse(data)
 
     const index = products.findIndex((product) => product.id === productId)
@@ -121,7 +121,7 @@ router.delete('/:pid', async (req, res) => {
 
     products.splice(index, 1)
 
-    await fs.promises.writeFile('./files/products.json', JSON.stringify(products, null, 2), 'utf8')
+    await fs.promises.writeFile('./src/files/products.json', JSON.stringify(products, null, 2), 'utf8')
 
     res.json({ message: 'Producto eliminado correctamente' })
   } catch (error) {

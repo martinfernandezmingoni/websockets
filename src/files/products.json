@@ -1,68 +1,24 @@
 [
   {
-    "id": "b538aab3-9275-4053-8b53-459c576f2f03",
-    "title": "msma",
-    "description": "sdfsdf",
-    "code": "sdfsdf",
-    "price": 150,
+    "id": "565ff91b-9159-45d3-aa90-ba1f6d5a29a2",
+    "title": "Catan Cartas",
+    "description": "es el catan pero en cartas amiguito",
+    "code": "CatanCartas",
+    "price": 5000,
     "status": true,
     "stock": 2,
-    "category": "4trdg",
+    "category": "Cartas",
     "thumbnails": []
   },
   {
-    "id": "618b9296-0c16-4340-8932-fd35ba4e30be",
-    "title": "msma",
-    "description": "sdfsdf",
-    "code": "sdfsdf",
-    "price": 150,
+    "id": "a32462ac-651a-42a8-b899-898971494462",
+    "title": "Terra Mystica",
+    "description": "es el catan pero en cartas amiguito",
+    "code": "CatanCartas",
+    "price": 5000,
     "status": true,
     "stock": 2,
-    "category": "4trdg",
-    "thumbnails": []
-  },
-  {
-    "id": "209ae494-aee4-4f72-8a05-63e382758f6c",
-    "title": "msma",
-    "description": "sdfsdf",
-    "code": "sdfsdf",
-    "price": 150,
-    "status": true,
-    "stock": 2,
-    "category": "4trdg",
-    "thumbnails": []
-  },
-  {
-    "id": "091ddc36-aa89-49a5-a2ca-ea6d20654f82",
-    "title": "msma",
-    "description": "sdfsdf",
-    "code": "sdfsdf",
-    "price": 150,
-    "status": true,
-    "stock": 2,
-    "category": "4trdg",
-    "thumbnails": []
-  },
-  {
-    "id": "f6cde4ca-c110-4908-a616-87711985010f",
-    "title": "msma",
-    "description": "sdfsdf",
-    "code": "sdfsdf",
-    "price": 150,
-    "status": true,
-    "stock": 2,
-    "category": "4trdg",
-    "thumbnails": []
-  },
-  {
-    "id": "848630cf-b040-4290-aa18-535017989562",
-    "title": "msma",
-    "description": "sdfsdf",
-    "code": "sdfsdf",
-    "price": 150,
-    "status": true,
-    "stock": 2,
-    "category": "4trdg",
+    "category": "Cartas",
     "thumbnails": []
   }
 ]
